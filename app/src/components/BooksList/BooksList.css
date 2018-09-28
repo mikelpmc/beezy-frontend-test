@@ -1,0 +1,15 @@
+.booksList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.booksList__item {
+    flex: 1 1 250px;
+    margin: 10px;
+    min-height: 200px;
+}
+
+.bookList__item__header {
+    min-height: 70px;
+}

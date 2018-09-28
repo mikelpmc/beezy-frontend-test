@@ -1,0 +1,65 @@
+.panel {
+    background-color: white;
+}
+
+.panel-heading {
+    background-color: white;
+}
+
+.panel-block {
+    padding: 2em 1em;
+}
+
+.panel-block__label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.label:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.price__label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.panel-block__container {
+    width: 100%;
+}
+
+.select__input {
+    width: 100vw;
+}
+
+/** NO UI SLIDER **/
+.noUi-target {
+    border: none;
+    box-shadow: none;
+    background-color: #e5e8ea;
+    height: 3px;
+}
+
+.noUi-target .noUi-connect {
+    background-color: tomato;
+    box-shadow: none;
+}
+
+.noUi-target .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: none;
+    border: 2px solid #404040;
+    left: -8px;
+    top: -7px;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+    content: none;
+}
+
+.noUi-handle:focus {
+    outline: none;
+}

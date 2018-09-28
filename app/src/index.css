@@ -1,0 +1,17 @@
+body {
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.form__container {
+    justify-content: center;
+}
+
+.button__container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
