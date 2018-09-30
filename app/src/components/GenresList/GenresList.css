@@ -1,11 +1,11 @@
 .genresList {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .genresList__item {
     flex: 1 1 250px;
     margin: 10px;
-    min-height: 200px;
+    max-width: 350px;
 }

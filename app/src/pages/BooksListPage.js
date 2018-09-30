@@ -30,7 +30,7 @@ const BooksListPage = ({
                     </ul>
                 </nav>
 
-                <div className="columns is-mobile">
+                <div className="columns is-centered is-multiline">
                     <div className="column is-one-third">
                         <Filters
                             genreStore={genreStore}

@@ -29,7 +29,7 @@ const GenresListPage = ({ genres, onRemoveGenre, alertStore }) => {
                     </Link>
                 </div>
 
-                <div className="columns">
+                <div className="columns is-centered is-multiline">
                     <div className="column">
                         <AlertMessage type={type} message={message} />
 
