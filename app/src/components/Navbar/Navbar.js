@@ -18,6 +18,11 @@ class Navbar extends Component {
             burguer: !prevState.burguer
         });
     };
+
+    componentWillUnmount() {
+        console.log('NAVBAR UNMOUNT');
+    }
+
     render() {
         const { location } = this.props;
         const { navbar, burger } = this.state;

@@ -110,9 +110,19 @@ const logic = () => {
         genre.deleted = true;
 
         // set deleted to true on every book with this genre also
-        _books.forEach(
-            book => (book.genre === genreId ? (book.deleted = true) : null)
-        );
+        _books.forEach(book => {
+            let result = false;
+
+            if (typeof book.genre !== 'object') {
+                if (book.genre === genreId) result = true;
+            } else {
+                if (book.genre.id === genreId) result = true;
+            }
+
+            if (result) {
+                book.deleted = true;
+            }
+        });
 
         return true;
     };

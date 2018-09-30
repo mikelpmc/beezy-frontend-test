@@ -10,7 +10,6 @@ export default (state = initialState, action) => {
     switch (action.type) {
         case BookTypes.UPDATE_BOOKS:
             const { total, books } = action.payload;
-
             return {
                 books,
                 book: {},

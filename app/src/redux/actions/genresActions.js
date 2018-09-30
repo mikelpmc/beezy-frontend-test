@@ -3,6 +3,8 @@ import { GenresTypes } from './../constants';
 import { AlertActions } from './alertsActions';
 import { retrieveBooks } from './booksActions';
 
+import store from './../store';
+
 import { logic } from 'logic';
 const Logic = logic();
 

@@ -20,7 +20,7 @@ class BooksListPageContainer extends Component {
             genre: 'all',
             prices: [0, 20],
             title: '',
-            orderBy: '-price'
+            orderBy: '+price'
         }
     };
 
@@ -147,6 +147,14 @@ class BooksListPageContainer extends Component {
     onChangeOrderBy = orderBy => {
         const { pathname } = this.props.location;
         const { genre, prices, title } = this.state.filters;
+
+        // ASC
+        if (orderBy.substring(0, 1) === '+') {
+            orderBy = orderBy.replace('+', '%2B');
+        } else {
+            // DESC
+            orderBy = orderBy.replace('-', '%2D');
+        }
 
         let newUrl = `${pathname}?cursor=0&page=1&genre=${genre}&prices=${prices}&title=${title}&orderBy=${orderBy}`;
 
