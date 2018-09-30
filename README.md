@@ -3,7 +3,7 @@
 React with redux book store crud app with react-router
 It uses bulma as a css framework.
 
-<a href="http://beezy-books-frontend-test.surge.sh" target="_blank">Live demo</a>
+<a href="https://beezy-books-frontend-test.surge.sh" target="_blank">Live demo</a>
 
 # Getting started
 
