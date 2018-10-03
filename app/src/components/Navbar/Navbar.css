@@ -1,4 +1,11 @@
 .navbar-item__title {
     font-size: 24px;
     color: tomato;
+    margin-left: 20px;
+}
+
+.navbar-item img {
+    width: 50px;
+    height: auto;
+    max-height: none;
 }
