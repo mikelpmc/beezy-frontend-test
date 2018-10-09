@@ -79,8 +79,10 @@ const logic = () => {
 
         if (
             !!_genres.find(
-                ({ name: _name, id }) =>
-                    _name.toLowerCase() === name.toLowerCase() && id !== genreId
+                ({ name: _name, id, deleted }) =>
+                    _name.toLowerCase() === name.toLowerCase() &&
+                    id !== genreId &&
+                    !deleted
             )
         )
             throw new LogicError(`genre with name ${name} already exists`);
@@ -265,9 +267,10 @@ const logic = () => {
 
         if (
             !!_books.find(
-                ({ title: oldtitle, id }) =>
+                ({ title: oldtitle, id, deleted }) =>
                     oldtitle.toLowerCase() === title.toLowerCase() &&
-                    id !== bookId
+                    id !== bookId &&
+                    !deleted
             )
         )
             throw new LogicError(`book with title ${title} already exists`);
@@ -385,7 +388,9 @@ const logic = () => {
     const _alreadyExists = (collection, field, value) => {
         if (collection.length) {
             return !!collection.find(
-                el => el[field].toLowerCase() === value.toLowerCase()
+                el =>
+                    el[field].toLowerCase() === value.toLowerCase() &&
+                    !el.deleted
             );
         }
 

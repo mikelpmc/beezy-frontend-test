@@ -6,7 +6,7 @@ import { BookForm, AlertMessage } from '../components';
 class AddBookPage extends Component {
     state = {
         title: '',
-        price: 0,
+        price: '',
         genreId: ''
     };
 
